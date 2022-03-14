@@ -28,6 +28,12 @@ class BrainQuiz:
         self.check_answer(answer, current_answer)
 
     def check_answer(self, user_answer, current_answer):
+        """
+        veriify is selected answer is correct or wrong
+        :param user_answer:
+        :param current_answer:
+        :return:
+        """
         if user_answer == current_answer:
             self.score += 1
             print("You're right!")
